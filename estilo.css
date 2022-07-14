@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish';
+}
+body{
+    background: url(img/fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #fff;
+    height: 100vh;
+}
+section{
+   max-width: 90%;
+   width: 100%;
+   padding: 50px;
+   margin: auto;
+   text-align: center;
+}
+
+#pantalla-inicio{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#pantalla-juego{
+    display: none;
+}
+#pantalla-final{
+    display: flex;
+}
+
+/* PANTALLA INICIO */
+#pantalla-inicio h2{
+    font-size: 60px;
+    text-shadow: 3px 3px 10px #000;
+
+}
+#pantalla-inicio h2 span{
+    color: #ffff0d;
+}
+#pantalla-inicio button{
+    font-size: 30px;
+    display: inline-block;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    background:#1cff03;
+    color:#000;
+}
+#pantalla-inicio button:hover{
+    background-color:#ffff0d;
+}
+
+/* PANTALLA JUEGO */
+#pantalla-juego h2{
+    font-size: 40px;
+    text-shadow: 3px 3px 10px #000;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+#pantalla-juego h2 span{
+    color: #ffff0d;
+}
+#pantalla-juego .contenedor-pais{
+    margin-top: 40px;
+}
+
+#pantalla-juego .contenedor-pais .letra{
+    display: inline-block;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 10px;
+    width: 100%;
+    color: #000;
+    background-color: #fff;
+    font-size: 50px;
+    margin: 2px;
+    text-align: center;
+    font-family: 'Mulish';
+    font-weight: 800;
+    line-height: 80px;
+}
+#pantalla-juego input{
+    display: inline-block;
+    font-size: 50px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    margin-top: 40px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 4PX;
+}
+#myProgress {
+    width: 300px;
+    margin: auto;
+    background:#1cff03;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+  
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color:#176aff;
+}
+
+#pantalla-juego .acertadas{
+    margin-top: 30px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* PANTALLA FINAL */
+#pantalla-final{
+    font-size: 30px;
+    display: none;
+    flex-direction: column;
+}
+#pantalla-final h2{
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+#pantalla-final h3 span{
+    display: block;
+    font-size: 70px;
+    color: #1cff03;
+}
+#pantalla-final button{
+    width: fit-content;
+    margin: auto;
+    font-size: 30px;
+    display: inline-block;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    background:#1cff03;
+    color:#000;
+}
+#pantalla-final button:hover{
+    cursor: pointer;
+    background:#ffff0d;
+
+}
+@media screen and (max-width:1000px) {
+    section{
+        width: 100%;
+    }
+    #pantalla-juego .contenedor-pais .letra{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+    #pantalla-juego input{
+        display: block;
+        width: 80%;
+        margin: 40px auto;
+        font-size: 30px;
+    }
+}
